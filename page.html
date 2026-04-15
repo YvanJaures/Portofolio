@@ -64,58 +64,386 @@
         </header>
         <main class="flex-20 w-full flex flex-col justify-center items-center px-10 py-2" id="main">
             <div class="flex w-full gap-5">
-                <button class="h-10 w-40 rounded p-2 border hover:text-blue-800 hover:border-blue-800" id="competences">
+                <a href="#sectionCompetences" class="h-10 w-40 rounded p-2 border hover:text-blue-800 hover:border-blue-800" id="competences">
                     Compétences
-                </button>
-                <button class="h-10 w-40 rounded p-2 border hover:text-blue-800 hover:border-blue-800" id="projets">
+                </a>
+                <a href="#sectionProjets" class="h-10 w-40 rounded p-2 border hover:text-blue-800 hover:border-blue-800" id="projets">
                     Projets
-                </button>
-                <button class="h-10 w-40 rounded p-2 border hover:text-blue-800 hover:border-blue-800" id="education">
+                </a>
+                <a href="#sectionEducation" class="h-10 w-40 rounded p-2 border hover:text-blue-800 hover:border-blue-800" id="education">
                     Education
-                </button>
+                </a>
             </div>
-            <div class="flex w-full py-2" id="view">
-                <section class="w-full" id="sectionCompetences">
+            <div class="flex flex-col w-full py-2" id="view">
+                <section class="w-full border-b py-1" id="sectionCompetences">
                     <h3>
                         Je maîtrise plusieurs outils et languages de programmation qui sont les suivants:
                     </h3>
                     <span class="flex flex-row justify-between w-full">
                         <Details open>
                             <summary>Frontend</summary>
-                            <ul class="bg-white">
+                            <ul class="bg-white flex flex-col gap-2">
                                 <li class="flex gap-2 justify-start items-center">
-                                    <i class="fa-brands fa-react"></i>React
+                                    <img src="./stach_r1_c1.jpg" alt="logo react" class="w-15 h-7">Html
                                 </li>
                                 <li class="flex gap-2 justify-start items-center">
-                                    <i class="fa-brands fa-react"></i>React-icons
+                                    <img src="./stach_r1_c2.jpg" alt="logo react" class="w-15 h-7">CSS
                                 </li>
                                 <li class="flex gap-2 justify-start items-center">
-                                    <i class="fa-brands fa-react"></i>Next.js
+                                    <img src="./stach_r3_c1.jpg" alt="logo react" class="w-15 h-7">TypeScript
                                 </li>
                                 <li class="flex gap-2 justify-start items-center">
-                                    <i class="fa-brands fa-tailwind-css"></i>Tailwind Css
+                                    <img src="./stach_r2_c5.jpg" alt="logo react" class="w-15 h-7">JavaScript
                                 </li>
                                 <li class="flex gap-2 justify-start items-center">
-                                    <i class="fa-brands fa-react"></i>TypeScript
+                                    <img src="./stach_r2_c1.jpg" alt="logo react" class="w-15 h-7">React
                                 </li>
                                 <li class="flex gap-2 justify-start items-center">
-                                    <i class="fa-brands fa-js"></i>JavaScript
+                                    <img src="./stach_r2_c1.jpg" alt="logo react" class="w-15 h-7">React-icons
+                                </li>
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./stach_r2_c2.jpg" alt="logo react" class="w-15 h-7">Next.js
+                                </li>
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./stach_r2_c3.jpg" alt="logo react" class="w-15 h-7">Tailwind Css
+                                </li>
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./stach_r3_c2.jpg" alt="logo react" class="w-15 h-7">Swift
+                                </li>
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./stach_r1_c3.jpg" alt="logo react" class="w-15 h-7">WPF
                                 </li>
                             </ul>
                         </Details>
-                        <Details>
+                        <Details open>
                             <summary>Backend</summary>
-                            <ul>
+                            <ul class="bg-white flex flex-col gap-2">
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./stach_r1_c4.jpg" alt="logo react" class="w-15 h-7">Node.js
+                                </li>
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./stach_r1_c5.jpg" alt="logo react" class="w-15 h-7">Express.js
+                                </li>
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./stach_r2_c5.jpg" alt="logo react" class="w-15 h-7">JavaScript
+                                </li>
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./stach_r3_c1.jpg" alt="logo react" class="w-15 h-7">TypeScript
+                                </li>
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./stach_r4_c4.jpg" alt="logo react" class="w-15 h-7">C#
+                                </li>
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./stach_r3_c3.jpg" alt="logo react" class="w-15 h-7">MySQL
+                                </li>
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./stach_r3_c5.jpg" alt="logo react" class="w-15 h-7">SQLite
+                                </li>
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./stach_r4_c1.jpg" alt="logo react" class="w-15 h-7">MongoDB
+                                </li>
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./stach_r4_c2.jpg" alt="logo react" class="w-15 h-7">Redis
+                                </li>
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./stach_r4_c3.jpg" alt="logo react" class="w-15 h-7">Cassandra
+                                </li>
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./stach_r3_c4.jpg" alt="logo react" class="w-15 h-7">SQL Server
+                                </li>
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./ou_r2_c2.jpg" alt="logo react" class="w-15 h-7">Prisma ORM
+                                </li>
 
                             </ul>
                         </Details>
-                        <Details>
+                        <Details open>
                             <summary>Outils</summary>
-                            <ul>
+                            <ul class="bg-white flex flex-col gap-2">
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./ou_r1_c3.jpg" alt="logo react" class="w-15 h-7">Vs code
+                                </li>
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./ou_r1_c4.jpg" alt="logo react" class="w-15 h-7">Vs studio
+                                </li>
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./ou_r1_c1.jpg" alt="logo react" class="w-15 h-7">EsLint
+                                </li>
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./ou_r2_c1.jpg" alt="logo react" class="w-15 h-7">Docker
+                                </li>
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./ou_r2_c3.jpg" alt="logo react" class="w-15 h-7">Github
+                                </li>
+                                <li class="flex gap-2 justify-start items-center">
+                                    <img src="./ou_r2_c4.jpg" alt="logo react" class="w-15 h-7">GitHub Copilot
+                                </li>
                                 
                             </ul>
                         </Details>
                     </span>
+                </section>
+                <section class="w-full border-b py-1" id="sectionProjets">
+                    <h3>
+                        J'ai travaillé sur plusieurs projets de différentes nature tous disponible sur mon github
+                    </h3>
+                    <span class="flex flex-col justify-between gap-5">
+                        <Details open>
+                            <summary>Emy</summary>
+                            <h3> Emy est un projet de développement web sur le thème du golf ou les utilisateurs peuvent s'inscrire à des tournois et plein d'autres fonctionnalités.</h3>
+                            <a href="https://github.com/YvanJaures/Emy" class="text-blue-800 underline">Repertoire Github</a>
+                            <span class="flex flex-row justify-between w-full">
+                                <Details open>
+                                    <summary>Frontend</summary>
+                                    <ul class="bg-white flex flex-col gap-2">
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r1_c1.jpg" alt="logo react" class="w-15 h-7">Html
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r1_c2.jpg" alt="logo react" class="w-15 h-7">CSS
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r3_c1.jpg" alt="logo react" class="w-15 h-7">TypeScript
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r2_c1.jpg" alt="logo react" class="w-15 h-7">React
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r2_c1.jpg" alt="logo react" class="w-15 h-7">React-icons
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r2_c2.jpg" alt="logo react" class="w-15 h-7">Next.js
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r2_c3.jpg" alt="logo react" class="w-15 h-7">Tailwind Css
+                                        </li>
+                                    </ul>
+                                </Details>
+                                <Details open>
+                                    <summary>Backend</summary>
+                                    <ul class="bg-white flex flex-col gap-2">
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r1_c4.jpg" alt="logo react" class="w-15 h-7">Node.js
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r1_c5.jpg" alt="logo react" class="w-15 h-7">Express.js
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r2_c5.jpg" alt="logo react" class="w-15 h-7">JavaScript
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r3_c1.jpg" alt="logo react" class="w-15 h-7">TypeScript
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r4_c2.jpg" alt="logo react" class="w-15 h-7">Redis
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r3_c4.jpg" alt="logo react" class="w-15 h-7">SQL Server
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./ou_r2_c2.jpg" alt="logo react" class="w-15 h-7">Prisma ORM
+                                        </li>
+
+                                    </ul>
+                                </Details>
+                                <Details open>
+                                    <summary>Outils</summary>
+                                    <ul class="bg-white flex flex-col gap-2">
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./ou_r1_c3.jpg" alt="logo react" class="w-15 h-7">Vs code
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./ou_r1_c1.jpg" alt="logo react" class="w-15 h-7">EsLint
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./ou_r2_c1.jpg" alt="logo react" class="w-15 h-7">Docker
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./ou_r2_c3.jpg" alt="logo react" class="w-15 h-7">Github
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./ou_r2_c4.jpg" alt="logo react" class="w-15 h-7">GitHub Copilot
+                                        </li>
+                                        
+                                    </ul>
+                                </Details>
+                            </span>
+                        </Details>
+
+                        <Details open>
+                            <summary>Projet socials</summary>
+                            <h3>
+                                C'est une application qui permet à ses utilissateurs de créer un compte et mettre des liens vers leurs comptes sur les réseaux sociaux et de gérer ses liens.
+                            </h3>
+                            <a href="https://github.com/YvanJaures/projet_socials" class="text-blue-800 underline">Repertoire Github</a>
+                            <span class="flex flex-row justify-between w-full">
+                                <Details open>
+                                    <summary>Frontend</summary>
+                                    <ul class="bg-white flex flex-col gap-2">
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r1_c1.jpg" alt="logo react" class="w-15 h-7">Html
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r1_c2.jpg" alt="logo react" class="w-15 h-7">CSS
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r2_c5.jpg" alt="logo react" class="w-15 h-7">JavaScript
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="" alt="logo font awesome" class="w-15 h-7">Font Awesome
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="" alt="logo Handlebars" class="w-15 h-7">HandleBars
+                                        </li>
+                                    </ul>
+                                </Details>
+                                <Details open>
+                                    <summary>Backend</summary>
+                                    <ul class="bg-white flex flex-col gap-2">
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r1_c4.jpg" alt="logo react" class="w-15 h-7">Node.js
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r1_c5.jpg" alt="logo react" class="w-15 h-7">Express.js
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r2_c5.jpg" alt="logo react" class="w-15 h-7">JavaScript
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r3_c4.jpg" alt="logo sql server" class="w-15 h-7">Sql server
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./ou_r2_c2.jpg" alt="logo react" class="w-15 h-7">Prisma ORM
+                                        </li>
+                                    </ul>
+                                </Details>
+                                <Details open>
+                                    <summary>Outils</summary>
+                                    <ul class="bg-white flex flex-col gap-2">
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./ou_r1_c3.jpg" alt="logo react" class="w-15 h-7">Vs code
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./ou_r1_c1.jpg" alt="logo react" class="w-15 h-7">EsLint
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./ou_r2_c3.jpg" alt="logo react" class="w-15 h-7">Github
+                                        </li>    
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./ou_r2_c1.jpg" alt="logo react" class="w-15 h-7">Docker
+                                        </li>                            
+                                    </ul>
+                                </Details>
+                            </span>
+                        </Details>
+
+                        <Details open>
+                            <summary>Relentless-sneaks</summary>
+                            <h3>
+                                C'est ma toute premiere application web développer pendant mes études comme projet personnel qui 
+                                se veut être une boutique en ligne avec un aspect futuriste. L'application en elle même n'est pas terminé mais une demo en ligne est disponible.
+                            </h3>
+                            <a href="https://relentless-sneaks.vercel.app/chaussures_new" class="text-blue-800 underline">Demonstration en ligne</a> <br>
+                            <a href="https://github.com/YvanJaures/Site-E-commerce-Html" class="text-blue-800 underline">Repertoire Github</a>
+                            <span class="flex flex-row justify-between w-full">
+                                <Details open>
+                                    <summary>Frontend</summary>
+                                    <ul class="bg-white flex flex-col gap-2">
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r1_c1.jpg" alt="logo react" class="w-15 h-7">Html
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r1_c2.jpg" alt="logo react" class="w-15 h-7">CSS
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r2_c5.jpg" alt="logo react" class="w-15 h-7">JavaScript
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="" alt="logo lucide" class="w-15 h-7">Lucide icons
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="" alt="logo Handlebars" class="w-15 h-7">HandleBars
+                                        </li>
+                                    </ul>
+                                </Details>
+                                <Details open>
+                                    <summary>Backend</summary>
+                                    <ul class="bg-white flex flex-col gap-2">
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r1_c4.jpg" alt="logo react" class="w-15 h-7">Node.js
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r1_c5.jpg" alt="logo react" class="w-15 h-7">Express.js
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r2_c5.jpg" alt="logo react" class="w-15 h-7">JavaScript
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r4_c1.jpg" alt="logo react" class="w-15 h-7">MongoDB
+                                        </li>
+                                    </ul>
+                                </Details>
+                                <Details open>
+                                    <summary>Outils</summary>
+                                    <ul class="bg-white flex flex-col gap-2">
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./ou_r1_c3.jpg" alt="logo react" class="w-15 h-7">Vs code
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./ou_r1_c1.jpg" alt="logo react" class="w-15 h-7">EsLint
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./ou_r2_c3.jpg" alt="logo react" class="w-15 h-7">Github
+                                        </li>                                
+                                    </ul>
+                                </Details>
+                            </span>
+                        </Details>
+
+                        <Details open>
+                            <summary>Appli de gestion de cours</summary>
+                            <h3>
+                                Application de bureau WPF permettant la gestion des cours et des horaires pour un établissement d'enseignement. Le système offre deux interfaces distinctes selon le rôle de l'utilisateur (Étudiant ou Administrateur).
+                            </h3>
+                            <a href="https://github.com/YvanJaures/App-Gestion-Cours" class="text-blue-800 underline">Repertoire Github</a>
+                            <span class="flex flex-row justify-between w-full">
+                                <Details open>
+                                    <summary>Frontend</summary>
+                                    <ul class="bg-white flex flex-col gap-2">
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r1_c3.jpg" alt="logo react" class="w-15 h-7">WPF
+                                        </li>
+                                    </ul>
+                                </Details>
+                                <Details open>
+                                    <summary>Backend</summary>
+                                    <ul class="bg-white flex flex-col gap-2">
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r4_c4.jpg" alt="logo react" class="w-15 h-7">C#
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./stach_r3_c5.jpg" alt="logo react" class="w-15 h-7">SQLite
+                                        </li>
+                                    </ul>
+                                </Details>
+                                <Details open>
+                                    <summary>Outils</summary>
+                                    <ul class="bg-white flex flex-col gap-2">
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./ou_r1_c4.jpg" alt="logo react" class="w-15 h-7">Vs studio
+                                        </li>
+                                        <li class="flex gap-2 justify-start items-center">
+                                            <img src="./ou_r2_c3.jpg" alt="logo react" class="w-15 h-7">Github
+                                        </li>                                
+                                    </ul>
+                                </Details>
+                            </span>
+                        </Details>
+
+                    </span>
+                </section>
+                <section class="w-full border-b py-1" id="sectionEducation">
+
                 </section>
             </div>
         </main>
