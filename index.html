@@ -254,7 +254,11 @@
                 <a href="https://www.linkedin.com/in/yvan-jaures-nzali-369885325/" target="_blank" class="social-link" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="./CV_Yvan_Jaures_Nzali.pdf" download class="cv-btn">
                     <i class="fa-solid fa-download" style="font-size:0.75rem"></i>
-                    <span data-fr="Télécharger CV" data-en="Download Resume"></span>
+                    <span data-fr="Télécharger CV" data-en="Télécharger CV"></span>
+                </a>
+                <a href="./Yvan_Jaures_Nzali_EN.pdf" download class="cv-btn">
+                    <i class="fa-solid fa-download" style="font-size:0.75rem"></i>
+                    <span data-fr="Download Resume" data-en="Download Resume"></span>
                 </a>
             </div>
             <a href="https://www.google.com/maps/place/ottawa,ontario" target="_blank" class="location-link">
@@ -485,26 +489,26 @@
                 </a>
             </div>
 
-            <form class="contact-form" id="contactForm" onsubmit="submitForm(event)">
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/mvzdnvqq" method="post" >
                 <div class="form-row">
                     <div class="form-field">
                         <label class="form-label" data-fr="Nom" data-en="Name"></label>
-                        <input class="form-input" type="text" required placeholder="Jean Dupont">
+                        <input class="form-input" type="text" name="name" required placeholder="Jean Dupont">
                     </div>
                     <div class="form-field">
                         <label class="form-label">Email</label>
-                        <input class="form-input" type="email" required placeholder="jean@example.com">
+                        <input class="form-input" type="email" name="email" required placeholder="jean@example.com">
                     </div>
                 </div>
                 <div class="form-field">
                     <label class="form-label" data-fr="Sujet" data-en="Subject"></label>
-                    <input class="form-input" type="text" required data-fr-ph="Demande d'emploi — Développeur Full Stack" data-en-ph="Job application — Full Stack Developer">
+                    <input class="form-input" type="text" name="subject" required data-fr-ph="Demande d'emploi — Développeur Full Stack" data-en-ph="Job application — Full Stack Developer">
                 </div>
                 <div class="form-field">
                     <label class="form-label" data-fr="Message" data-en="Message"></label>
-                    <textarea class="form-textarea" required data-fr-ph="Bonjour Yvan, je souhaite vous contacter au sujet de…" data-en-ph="Hello Yvan, I'd like to reach out about…"></textarea>
+                    <textarea class="form-textarea" required name="message" data-fr-ph="Bonjour Yvan, je souhaite vous contacter au sujet de…" data-en-ph="Hello Yvan, I'd like to reach out about…"></textarea>
                 </div>
-                <button type="submit" class="form-submit" style="background-color:gray" disabled>
+                <button type="submit" class="form-submit">
                     <i class="fa-solid fa-paper-plane" style="font-size:0.8rem"></i>
                     <span data-fr="Envoyer le message" data-en="Send message"></span>
                 </button>
@@ -611,10 +615,10 @@ function setLang(l) {
     });
     tRender();
 }
-
 function submitForm(e) {
     e.preventDefault();
-    const form = document.getElementById('contactForm');
+    const inputs=form.getElementsByClassName('form-input');
+    const textarea=form.getElementsByClassName('form-textarea')[0];
     // je dois rajouter une méthode d'envoi de messages ici
     form.querySelectorAll('input,textarea,button,label,.form-row,.form-field').forEach(el => el.style.display = 'none');
     document.getElementById('formSuccess').style.display = 'block';
