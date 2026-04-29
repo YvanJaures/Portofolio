@@ -378,6 +378,7 @@
                 <div class="project-header">
                     <div><p class="project-number">Projet 02</p><h2 class="project-name">LinkMe</h2></div>
                     <div class="project-links">
+                        <a href="https://linkme-socials.onrender.com/MyLinks/yvan" target="_blank" class="project-icon-btn" title="Démo live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         <a href="https://github.com/YvanJaures/projet_socials" target="_blank" class="project-icon-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
@@ -564,8 +565,6 @@
 </div>
 -->
 <script>
-import { inject } from "@vercel/analytics"
-inject()
 
 let lang = 'fr';
 
@@ -584,7 +583,7 @@ function openTour() { tStep = 0; tRender(); document.getElementById('tourOverlay
 function closeTour() { document.getElementById('tourOverlay').classList.remove('open'); }
 function closeTourBg(e) { if (e.target.id === 'tourOverlay') closeTour(); }
 function tGo(d) { tStep = Math.max(0, Math.min(TOUR.length-1, tStep+d)); tRender(); }
-
+/*
 function tRender() {
     const s = TOUR[tStep];
     const total = TOUR.length;
@@ -601,7 +600,7 @@ function tRender() {
     if (tStep === total-1) { next.textContent = lang === 'fr' ? 'Terminer ✓' : 'Finish ✓'; next.onclick = closeTour; }
     else { next.textContent = lang === 'fr' ? 'Suivant →' : 'Next →'; next.onclick = () => tGo(1); }
 }
-
+*/
 function setLang(l) {
     lang = l;
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.textContent === l.toUpperCase()));
@@ -616,7 +615,7 @@ function setLang(l) {
     document.querySelectorAll('.nav-tab[data-fr]').forEach(tab => {
         tab.textContent = tab.getAttribute('data-' + l);
     });
-    tRender();
+   // tRender();
 }
 function submitForm(e) {
     e.preventDefault();
